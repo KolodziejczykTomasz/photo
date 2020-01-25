@@ -7,15 +7,20 @@ import { FaChevronRight } from "react-icons/fa";
 
 const Logotypy = () => (
   <Container>
+    <div style={{marginTop: 80, marginBottom: 80}}>
     <Row>
       <Col sm>
         <Row>
-          <p>HISTORIE ŚLUBNE</p>
+          <p style={{fontWeight: 600}}>HISTORIE ŚLUBNE</p>
           <p>Obejrzyj moje najnowsze historie ślubne</p>
         </Row>
-        <Row>
-          ZOBACZ WIĘCEJ <FaChevronRight />
-        </Row>
+          <Row>
+            <p style={{marginTop: "40%"}}>
+              ZOBACZ WIĘCEJ <FaChevronRight />
+            </p> 
+          </Row>
+                     
+        
       </Col>
       <Col sm>
         <Image src={Logo1} rounded style={{ width: "90%" }} />
@@ -26,7 +31,8 @@ const Logotypy = () => (
       <Col sm>
         <Image src={Logo1} rounded style={{ width: "90%" }} />
       </Col>
-    </Row>
+      </Row>
+    </div>
   </Container>
 );
 

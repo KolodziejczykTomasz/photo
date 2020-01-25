@@ -3,14 +3,14 @@ import { Navbar, Nav } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
 
 const NavBarMenu = () => (
-  <Fragment>
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-      <Navbar.Brand href="#home">Brand</Navbar.Brand>
+  <Fragment >   
+    <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+      <Navbar.Brand href="#home" style={{backgroundColor: "#fff"}}>Brand</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Collapse id="responsive-navbar-nav" >
         <Nav
           className="mr-auto justify-content-center"
-          style={{ width: "75vw" }}
+          style={{ width: "80vw", marginTop: 20, marginBottom: 20, backgroundColor: "#fff" }}
         >
           <Nav.Link style={{ width: "100px" }} href="/">
             Home
@@ -24,13 +24,12 @@ const NavBarMenu = () => (
         </Nav>
       </Navbar.Collapse>
       <Navbar.Collapse className="mr-auto justify-content-end">
-        <Navbar.Text style={{ width: "150px" }}>
-          {" "}
+        <Navbar.Text style={{ width: "250px", backgroundColor: "#fff" }} >        
           <FaPhone style={{ marginRight: "15px" }} />
           +48 123 456 789
         </Navbar.Text>
       </Navbar.Collapse>
-    </Navbar>
+      </Navbar>    
   </Fragment>
 );
 

@@ -3,9 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => (
   <Container>
-    <Col>
-      <Row><p>Copyright 2020</p></Row>
-    </Col>
+    <div
+      style={{
+        marginTop: 40
+      }}
+    >
+      <p>Copyright 2020</p>
+    </div>
   </Container>
 );
 

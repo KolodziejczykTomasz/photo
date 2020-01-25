@@ -22,16 +22,19 @@ const GalleryList = () => {
 
   return (
     <Container>
+      <div style={{ width: "60vw", margin: "0 auto" }}>
       <Col>
-        <Row>
-          <Col sm={1}>
-            <Image src={Logo1} roundedCircle style={{ maxWidth: "70px" }} />
-          </Col>
-          <Col sm={11}>
-            <div>Jan Kowlaski Fotograf</div>
-            <div>Historia Weselna | Kętrzyn | 2020</div>
-          </Col>
-        </Row>
+        <div style={{ marginTop: 10, marginBottom: 10 }}>
+          <Row>
+            <Col sm={1}>
+              <Image src={Logo1} roundedCircle style={{ maxWidth: "70px" }} />
+            </Col>
+            <Col sm={11}>
+              <div style={{ marginLeft: 10}}>Jan Kowlaski Fotograf</div>
+              <div style={{ marginLeft: 10 }}>Historia Weselna | Kętrzyn | 2020</div>
+            </Col>
+          </Row>
+        </div>
         <Row>
           <div style={{ width: "60vw", margin: "0 auto" }}>
             <Gallery photos={photos} onClick={openLightbox} />
@@ -51,7 +54,9 @@ const GalleryList = () => {
             </ModalGateway>
           </div>
         </Row>
-      </Col>
+        </Col>
+        </div>
+        
     </Container>
   );
 };

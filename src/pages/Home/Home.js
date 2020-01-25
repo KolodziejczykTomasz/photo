@@ -5,6 +5,7 @@ import Slide from "../../component/Slide/Slide";
 import Logotypy from "../../component/Logotypy/Logotypy";
 import Footer from "../../component/Footer/Footer";
 import GalleryList from "../../component/Gallery/GalleryList";
+import Card from "../../component/Card/Card";
 
 class Home extends Component {
   render() {
@@ -14,6 +15,7 @@ class Home extends Component {
         <Slide />
         <Logotypy />
         <GalleryList />;
+        <Card />
         <Footer />
       </Fragment>
     );
