@@ -10,7 +10,7 @@ const NavBarMenu = () => (
       <Navbar.Collapse id="responsive-navbar-nav" >
         <Nav
           className="mr-auto justify-content-center"
-          style={{ width: "80vw", marginTop: 20, marginBottom: 20, backgroundColor: "#fff" }}
+          style={{ width: "80vw", marginTop: 20, marginBottom: 20, backgroundColor: "#fff", textTransform: "uppercase" }}
         >
           <Nav.Link style={{ width: "100px" }} href="/">
             Home

@@ -1,7 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 
 import Logo1 from "../../assets/images/logo1.png";
+
 
 const Card = () => (
   <Container>
@@ -9,16 +10,18 @@ const Card = () => (
       <Row>
         <div
           style={{
-            width: "60vw",
-            height: 200,
+            width: "55vw",
+            height: 300,
             margin: "0 auto",
-            backgroundColor: "#eeeeee"
+            marginLeft: 170,
+            backgroundColor: "#eeeeee",           
+            
           }}
         >
           <div
             style={{
               width: 350,
-              height: 200,
+              height: 300,
               marginTop: 15,
               marginLeft: 15,
               backgroundColor: "white",
@@ -28,17 +31,17 @@ const Card = () => (
             <Container>
               <Row>
                 <Col sm={12}>
-                  <p style={{ textAlign: "center", marginTop: 20 }}>Łukasz Sienkiewicz </p>
+                  <p style={{ textAlign: "center", marginTop: 60 }}>Łukasz Sienkiewicz </p>
                 </Col>
               </Row>
               <Row>
                 <Col sm={3}></Col>
                 <Col sm={9}>
-                  <p style={{ textAlign: "center", fontWeight: 600}}>
-                    "Fotografując staram się pokazać, tonikt inny by nie
+                  <p style={{ textAlign: "center", fontWeight: 700}}>
+                    "Fotografując staram się pokazać, to czego nikt inny by nie
                     zauważył"
                   </p>
-                  <p style={{ textAlign: "center" }}>READ ABOUT ME</p>{" "}
+                  <p style={{ textAlign: "center", marginTop: 60 }}>READ ABOUT ME</p>{" "}
                 </Col>
               </Row>
             </Container>
