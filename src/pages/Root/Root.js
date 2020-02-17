@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from '../Home/Home';
@@ -7,7 +7,6 @@ import Contact from '../Contact/Contact';
 
 import './Root.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 class Root extends Component {
   render() {

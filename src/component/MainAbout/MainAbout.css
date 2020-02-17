@@ -1,0 +1,63 @@
+.Main_Wrapper {
+  display: flex;
+  background-color: #eee;
+}
+
+.Main_Header {
+  display: block;
+  width: 100vw;
+  margin-bottom: -35px;
+  text-align: center;
+  font-family: Times, serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.Main_body {
+  display: flex;
+  padding-top: 70px;  
+}
+
+.Main_Box_Text {
+  width: 50vw;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 150px;
+  padding-right: 40px;
+  margin-bottom: 50px;
+}
+
+.Main_Box_Image {
+  width: 50vw;
+}
+
+.Main_Box_Image_photo {
+  display: block;
+  width: 300px;
+  padding: 0 20px 20px 0;
+}
+
+.Main_Box_Text_Header {
+  display: block;
+  font-family: Roboto, serif;   
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+
+.Main_Box_Text_Strong_FirstLine {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Main_Box_Text_Strong_SecondLine {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0;
+}
