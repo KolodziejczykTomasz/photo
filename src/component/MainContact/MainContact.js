@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Contact from '../../assets/images/contactpage.jpg';
-import { Row, Col, Form } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
 import { FaWhatsappSquare } from 'react-icons/fa';

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 import styled from 'styled-components';
 import Logo1 from '../../assets/images/logo1.png';
 
@@ -15,45 +14,53 @@ const StyledHeader = styled.div`
   grid-template-columns: 0.09fr 0.75fr;
 `;
 
+const StyledAwatar = styled.img`
+  max-width: 70px;
+  margin-left: 10px;
+  border-radius: 50px;
+`;
+
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  justify-items: center; 
+
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+    width: 70vw;
+  }
+`;
+
+const StyleGridItem = styled.img`
+  max-width: 350px;
+  &:hover {
+    transform: scale(1.5);
+  }
+`;
+
+const StyledParagraph = styled.p`
+  padding-left: 10px;
 `;
 
 const GalleryList = () => {
   return (
     <StyledWrapper>
       <StyledHeader>
+        <StyledAwatar src={Logo1} alt="galleryItem" />
         <div>
-          <Image src={Logo1} roundedCircle style={{ maxWidth: '70px', marginLeft: '10px' }} />
-        </div>
-        <div>
-          <p style={{ paddingLeft: '10px' }}> Jan Kowlaski Fotograf</p>
-          <p style={{ paddingLeft: '10px' }}>Historia Weselna | Kętrzyn | 2020</p>
+          <StyledParagraph> Jan Kowlaski Fotograf</StyledParagraph>
+          <StyledParagraph>Historia Weselna | Kętrzyn | 2020</StyledParagraph>
         </div>
       </StyledHeader>
-      <StyledGrid>
-        <div>
-          <img src={Logo1} style={{ maxWidth: '350px' }} alt="galleryItem" />
-        </div>
-        <div>
-          <img src={Logo1} style={{ maxWidth: '350px' }} alt="galleryItem" />
-        </div>
-        <div>
-          <img src={Logo1} style={{ maxWidth: '350px' }} alt="galleryItem" />
-        </div>
+      <StyledGrid>       
+        <StyleGridItem src={Logo1} alt="galleryItem" />
+        <StyleGridItem src={Logo1} alt="galleryItem" />
+        <StyleGridItem src={Logo1} alt="galleryItem" />
       </StyledGrid>
-      <StyledGrid>
-        <div>
-          <img src={Logo1} style={{ maxWidth: '350px' }} alt="galleryItem" />
-        </div>
-        <div>
-          <img src={Logo1} style={{ maxWidth: '350px' }} alt="galleryItem" />
-        </div>
-        <div>
-          <img src={Logo1} style={{ maxWidth: '350px' }} alt="galleryItem" />
-        </div>
+      <StyledGrid>        
+        <StyleGridItem src={Logo1} alt="galleryItem" />
+        <StyleGridItem src={Logo1} alt="galleryItem" />
+        <StyleGridItem src={Logo1} alt="galleryItem" />
       </StyledGrid>
     </StyledWrapper>
   );
