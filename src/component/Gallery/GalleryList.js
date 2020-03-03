@@ -18,6 +18,11 @@ const StyledAwatar = styled.img`
   max-width: 70px;
   margin-left: 10px;
   border-radius: 50px;
+  &:hover {
+    transform: scale(1.15);
+    filter: sepia(70%);
+    transition: transform 0.3s ease-in-out;
+  }
 `;
 
 const StyledGrid = styled.div`
@@ -34,7 +39,8 @@ const StyledGrid = styled.div`
 const StyleGridItem = styled.img`
   max-width: 350px;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
   }
 `;
 
